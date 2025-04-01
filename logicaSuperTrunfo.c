@@ -2,7 +2,6 @@
 
 
 int main () {
-    printf("\nLógicaSuperTriunfo\n");
 
 // Carta 1   
 char estado1;
@@ -26,7 +25,6 @@ scanf ("%s", &Codigo1);
 
 printf ("Digite o nome da cidade da carta 1: \n");
 scanf ("%49s", &cidade1);
-
 
 
 // Carta 2
@@ -57,7 +55,7 @@ scanf ("%49s", &cidade2);
 // Exibição carta 1
 printf("\nCarta 1:\n");
 printf ("Estado: %c \n", estado1);
-printf ("Codigo: %s \n", Codigo1);
+printf ("Código: %s \n", Codigo1);
 printf ("Nome da Cidade: %s \n", cidade1);
 printf ("População: %d \n", populacao1);
 printf ("Area: %.2f km² \n", area1);
@@ -65,7 +63,6 @@ printf ("PIB:  %.2f bilhões de reais \n", pib1);
 printf ("Número de pontos Turísticos: %d \n", turisticos1);
 printf ("Densidade Populacional: %.2f km² \n", densidade1);
 printf ("PIB por Capita: %.2F reais \n", capita1);
-printf ("Super poder carta 1 : %.2f\n", superpoder1);
 
 // Exibição carta 2
 printf("\nCarta 2:\n");
@@ -82,73 +79,91 @@ printf ("Super poder carta 2 : %.2f\n", superpoder2);
 
 // Comparações de carta 
 printf("\nComparações:\n");
-if (populacao1 > populacao2) {
-    /* code */
-printf ("Carta1 venceu\n");
 
-}else {
-    /* code */
-    printf ("carta2 venceu\n");
-}
-
-
-if (area1 > area2) {
-    /* code */
-printf ("Carta1 venceu\n");
-
-}else {
-    /* code */
-    printf ("Carta2 venceu\n");
+if (populacao1 == populacao2){
+printf ("Empate\n");
+  
+}else if (populacao1 > populacao2)
     
+{
+  printf ("Nome da Cidade: %s \n", cidade1);;
+  printf ("População: %d \n", populacao1);
+  printf ("População: %d \n", populacao2);
+  printf ("carta1 venceu\n");
+}else{
+  printf ("\nNome da Cidade: %s \n", cidade2);
+  printf ("População: %d \n", populacao1);
+  printf ("População: %d \n", populacao2);
+  printf ("carta2 venceu\n");
 }
 
-if (pib1 > pib2) {
-    /* code */
-printf ("Carta1 venceu\n");
-
-}else {
-    /* code */
-    printf ("Carta2 venceu\n");
-}
-
-if (turisticos1 > turisticos2) {
-    /* code */
-printf ("Carta1 venceu\n");
-
-}else {
-    /* code */
+if (area1 == area2){
+  printf ("Empate\n");
+    
+  }else if (area1 > area2)
+      
+  {
+    printf ("\nNome da Cidade: %s \n", cidade1);
+    printf ("Area: %.2f km² \n", area1);
+    printf ("Area: %.2f km² \n", area2);
+    printf ("carta1 venceu\n");
+  }else{
+    printf ("\nNome da Cidade: %s \n", cidade2);
+    printf ("Area: %.2f km² \n", area1);
+    printf ("Area: %.2f km² \n", area2);
     printf ("carta2 venceu\n");
-}
+  }
 
+  if (pib1 == pib2){
+    printf ("Empate\n");
+      
+    }else if (pib1 > pib2)
+        
+    {
+      printf ("\nNome da Cidade: %s \n", cidade1);
+      printf ("PIB:  %.2f bilhões de reais \n", pib1);
+      printf ("PIB:  %.2f bilhões de reais\n", pib2);
+      printf ("carta1 venceu\n");
+    }else{
+      printf ("\nNome da Cidade: %s \n", cidade2);
+      printf ("PIB:  %.2f bilhões de reais \n", pib1);
+      printf ("PIB:  %.2f bilhões de reais \n", pib2);
+      printf ("carta2 venceu\n");
+    }
 
-if (densidade1 < densidade2) {
-    /* code */
-printf ("Carta1 venceu\n");
+    if (turisticos1 == turisticos2){
+      printf ("Empate\n");
+        
+      }else if (turisticos1 > turisticos2)
+          
+      {
+        printf ("\nNome da Cidade: %s \n", cidade1);
+        printf ("Número de pontos Turísticos: %d \n", turisticos1);
+        printf ("Número de pontos Turísticos: %d \n", turisticos2);
+        printf ("carta1 venceu\n");
+      }else{
+        printf ("\nNome da Cidade: %s \n", cidade2);
+        printf ("Número de pontos Turísticos: %d\n", turisticos1);
+        printf ("Número de pontos Turísticos: %d \n", turisticos2);
+        printf ("carta2 venceu\n");
+      }
 
-}else {
-    /* code */
-    printf ("Carta2 venceu\n");
-}
-
-if (capita1 > capita2) {
-    /* code */
-printf ("Carta1 venceu\n");
-
-}else {
-    /* code */
-    printf ("carta2 venceu\n");
-}
-
-if (superpoder1 > superpoder2) {
-    /* code */
-printf ("Carta1 venceu\n");
-
-}else {
-    /* code */
-    printf ("carta2 venceu\n");
-}
-
-
-return 0;
+      if (densidade1 == densidade2){
+        printf ("Empate\n");
+          
+        }else if (densidade1 < densidade2)
+            
+        {
+          printf ("\nNome da Cidade: %s \n", cidade1);
+          printf ("Densidade: %.2f \n", densidade1);
+          printf ("Densidade: %.2f  \n", densidade2);
+          printf ("carta1 venceu\n");
+        }else{
+          printf ("\nNome da Cidade: %s \n", cidade2);
+          printf ("Densidade: %.2f \n", densidade1);
+          printf ("Densidade: %.2f \n", densidade2);
+          printf ("carta2 venceu\n");
+        }
+      
 
 }
